@@ -8,4 +8,10 @@ public class Coffee extends CaffeineBeverage {
 	public void addCondiments() {
 		System.out.println("Adding Sugar and Milk");
 	}
+	public void ripen(){}
+
+	@Override
+	void boilWater() {
+		System.out.println("Boiling water");
+	}
 }

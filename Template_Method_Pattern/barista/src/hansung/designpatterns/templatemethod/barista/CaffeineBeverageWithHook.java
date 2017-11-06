@@ -6,7 +6,9 @@ public abstract class CaffeineBeverageWithHook {
 	final void prepareRecipe() {
 		boilWater();
 		brew();
+		ripen();
 		pourInCup();
+
 		if (customerWantsCondiments()) {
 			addCondiments();
 		}
@@ -15,10 +17,10 @@ public abstract class CaffeineBeverageWithHook {
 	abstract void brew();
  
 	abstract void addCondiments();
+
+	abstract void ripen();
  
-	void boilWater() {
-		System.out.println("Boiling water");
-	}
+	abstract void boilWater();
  
 	void pourInCup() {
 		System.out.println("Pouring into cup");

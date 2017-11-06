@@ -12,6 +12,8 @@ public class TeaWithHook extends CaffeineBeverageWithHook {
 	public void addCondiments() {
 		System.out.println("Adding Lemon");
 	}
+
+	public void ripen(){}
  
 	public boolean customerWantsCondiments() {
 
@@ -40,5 +42,10 @@ public class TeaWithHook extends CaffeineBeverageWithHook {
 			return "no";
 		}
 		return answer;
+	}
+
+	@Override
+	void boilWater() {
+		System.out.println("Boiling water");
 	}
 }

@@ -8,4 +8,10 @@ public class Tea extends CaffeineBeverage {
 	public void addCondiments() {
 		System.out.println("Adding Lemon");
 	}
+	public void ripen(){}
+
+	@Override
+	void boilWater() {
+		System.out.println("Boiling water");
+	}
 }

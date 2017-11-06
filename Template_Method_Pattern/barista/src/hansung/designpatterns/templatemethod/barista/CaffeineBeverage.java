@@ -6,6 +6,7 @@ public abstract class CaffeineBeverage {
 	final void prepareRecipe() {
 		boilWater();
 		brew();
+		ripen();
 		pourInCup();
 		addCondiments();
 	}
@@ -13,10 +14,10 @@ public abstract class CaffeineBeverage {
 	abstract void brew();
   
 	abstract void addCondiments();
- 
-	void boilWater() {
-		System.out.println("Boiling water");
-	}
+
+	abstract void ripen();
+
+	abstract void boilWater();
   
 	void pourInCup() {
 		System.out.println("Pouring into cup");
